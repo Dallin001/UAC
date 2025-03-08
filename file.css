@@ -1,0 +1,773 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+body {
+  margin: 0;
+  font-family: "Noto Sans", serif;
+  background-color: rgb(244,244,244);
+  overflow-x: hidden;
+}
+#myVideo {
+    width: 100%; 
+    height: 20%;
+    filter: brightness(50%);
+  }
+  .header-container-div1{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    color: #f1f1f1;
+    width: 100%;
+  }
+  .header-container-div1 h1{
+    font-size: 50px;
+    padding-top: 160px;
+    padding-left: 30px;
+  }
+  .header-container-div1 p{
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  .header-container-div2 ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 14px;
+  }
+  .header-container-div2 ul li{
+    margin: 1rem;
+    position: relative;
+    top: -10px;
+    left: 650px;
+    font-weight: bold;
+  }
+  .header-container-div2 a{
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    top: 30px;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a{
+    padding:10px;
+    display: block;
+    color: black;
+    text-decoration:none;
+    font-size: 12px;
+}
+.dropdown-content a:hover {
+    background-color: red;
+    color: white;    
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.main-page{
+  position: relative;
+  top: 60px;
+  left: 20px;
+}
+.main-container1,.main-container2{
+  display: flex;
+}
+.main-container1-btn, .main-container2-btn {
+  position: relative;
+  overflow: hidden; 
+}
+.main-container1-btn img, .main-container2-btn img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: filter 2s ease-in-out;
+}
+.main-container1-btn:hover img {
+  filter: brightness(20%);
+}
+.main-container2-btn:hover img {
+  filter: brightness(20%);
+}
+.centered1{
+  position: absolute;
+  top: 95px;
+  left: 80px;
+  font-size: 14px;
+  color: white;
+  transition: font-size 2s ease-in-out;
+}
+.main-container1-btn:hover .centered1{
+  font-size: 16px;
+}
+.centered2{
+  position: absolute;
+  top: 95px;
+  left: 80px;
+  font-size: 14px;
+  color: white;
+  transition: font-size 2s ease-in-out;
+}
+.main-container1-btn:hover .centered2{
+  font-size: 16px;
+}
+.centered3{
+  position: absolute;
+  top: 95px;
+  left: 50px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  transition: font-size 2s ease-in-out;
+}
+.main-container1-btn:hover .centered3{
+  font-size: 16px;
+}
+.centered4{
+  position: absolute;
+  top: 85px;
+  left: 50px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  transition: font-size 2s ease-in-out;
+}
+.main-container2-btn:hover .centered4{
+  font-size: 16px;
+}
+.centered5{
+  position: absolute;
+  top: 85px;
+  left: 50px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  transition: font-size 2s ease-in-out;
+}
+.main-container2-btn:hover .centered5{
+  font-size: 16px;
+}
+.centered6{
+  position: absolute;
+  top: 85px;
+  left: 50px;
+  font-size: 14px;
+  color: white;
+  transition: font-size 2s ease-in-out;
+}
+.main-container2-btn:hover .centered6{
+  font-size: 16px;
+}
+.main-page2{
+  display: flex;
+  position: relative;
+  top: -400px;
+  left: 700px;
+}
+.main-page2 h1{
+  font-size: 20px;
+  font-weight: 500;
+}
+.main-page2-btn{
+  color: red;
+  font-size: 80px;
+  width: 150px;
+  height: 230px;
+  border: 2px solid lightgray;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-inline-end: 20px;
+}
+.main-page2-div{
+margin:calc(10%/3);
+}
+.main-page3-div img{
+  width: 165%;
+  height: 500px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+#different2 a{
+  color: red; 
+  text-decoration: none;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+#different2 a:hover{
+  text-decoration: underline;
+}
+.main-page3{
+  width: 120%;
+  height: 500px;
+ background-image: url(https://www.uacnplc.com/wp-content/uploads/2020/01/Lagos-nIgeria-scaled.jpg);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+ position: absolute;
+ top: 550px;
+ left: -900px;
+}
+.main-page3 p{
+  font-size: 27px;
+  text-align: Center;
+  margin-top: 180px;
+  font-weight: 550;
+}
+.main-page4 p{
+  font-size: 20px;
+  margin-top: 200px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+.main-page5 {
+  display: inline;
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+.main-page5-img1, .main-page5-img2, .main-page5-img3, .main-page5-img4, .main-page5-img5{
+  float: left;
+  width: 268px;
+  height: 250px;
+  color: red;
+  object-fit: cover;
+  filter: brightness(30%);
+  transition: all 0.5s ease;
+}
+.main-page5-div:hover .img-container {
+  width: 100%; /* Expands the width of the image */
+}
+#center1{
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  font-weight: bold;
+  font-size: 20px;
+  color:red;
+}
+#center2{
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  font-weight: bold;
+  font-size: 20px;
+  color:red;
+}
+#center3{
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 600px;
+  font-weight: bold;
+  font-size: 20px;
+  color:red;
+}
+#center4{
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 900px;
+  font-weight: bold;
+  font-size: 20px;
+  color:red;
+}
+#center5{
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 1000px;
+  font-weight: bold;
+  font-size: 20px;
+  color:red;
+}
+#paragraph1{
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  color:red;
+  word-wrap: break-word;
+}
+#paragraph2{
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 280px;
+  font-weight: bold;
+  font-size: 16px;
+  color:red;
+  word-wrap: break-word;
+}
+#paragraph3{
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 560px;
+  font-weight: bold;
+  font-size: 16px;
+  color:red;
+  word-wrap: break-word;
+}
+#paragraph4{
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 1000px;
+  font-weight: bold;
+  font-size: 16px;
+  color:red;
+  word-wrap: break-word;
+}
+#paragraph5{
+  display: none;
+  position: absolute;
+  top: 1200px;
+  left: 100px;
+  font-weight: bold;
+  font-size: 16px;
+  color:red;
+  word-wrap: break-word;
+}
+#paragraph6{
+  display: none;
+  position: absolute;
+  top: 1200px;
+  left: 100px;
+  font-weight: bold;
+  font-size: 16px;
+  color:red;
+  word-wrap: break-word;
+}
+.main-page6{
+  position: relative;
+  top: 310px;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-color: white;
+}
+.main-page6 h2{
+ font-size: 30px;
+ position: relative;
+ top: -200px;
+ left: 10px;
+ padding-left: 20px;
+}
+.main-page6 div{
+  display: inline-block;
+  position: relative;
+  top: -200px;
+  left: 10px;
+  margin: calc(10%/10);
+  width: 300px;
+  height: 200px;
+  border: 1px solid rgb(244,244,244);
+  background-color: rgb(244,244,244);
+}
+.main-page6 p{
+  margin: 25px;
+}
+#p1{
+  font-size: 18px;
+}
+#p2{
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+.main-page6 a{
+  text-decoration: none;
+  color: black;
+}
+.main-page6 div:hover{
+  border-bottom: 1px solid red;
+}
+#different a{
+  position: relative;
+  top: 180px;
+  left:20px;
+  color: red; 
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+#different a:hover{
+  text-decoration: underline;
+}
+.footer-page1{
+  margin-top: 300px;
+}
+.footer-page1 div img{
+  width: 50px;
+  margin-left: 600px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.footer-page-div1 span{
+  margin-left:2rem ;
+  position: relative;
+  left: 350px;
+  font-size: 15px;
+}
+.footer-page-div2{
+  display: inline;
+  margin-left: 300px;
+}
+.footer-page-div2 ul{
+  display: inline-block;
+}
+.footer-page-div2 ul a{
+  text-decoration: none;
+  color: black;
+  margin: 2rem;
+  font-size: 14px;
+}
+.footer-page-div2 ul a:hover{
+  color: red;
+}
+.footer-page-div3{
+  display: flex;
+  list-style-type: none;
+  padding-left: 400px;
+}
+.footer-page-div3 li{
+  margin: 2rem;
+  font-size: 11px;
+}
+@media (max-width:563px){
+
+  .header-container-div1 h1{
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    line-height: 1.2;
+  }
+  .header-container-div1 p{
+    font-size: 12px;
+    padding-left: 30px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  .fa-bars{
+    display: inline;
+    position: relative;
+    left: 0px;
+  }
+.main-page2{
+  display: flex;
+  position: relative;
+  top: -600px;
+  left: 30px;
+}
+.main-page2 h1{
+  font-size: 16px;
+  text-align: center;
+}
+.main-page2-btn{
+  margin-top: 40px;
+  margin-inline-end: 2px;
+}
+#different2{
+  text-align: center;
+}
+.main-page{
+  position: relative;
+  top: 480px;
+  left: 20px;
+}
+.main-container1,.main-container2{
+  display: inline-block;
+}
+.main-container1-btn img, .main-container2-btn img {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+.main-page3{
+  width: 100%;
+  height: 300px;
+ background-image: url(https://www.uacnplc.com/wp-content/uploads/2020/01/Lagos-nIgeria-scaled.jpg);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ object-fit: cover;
+ position: absolute;
+ top: 1100px;
+ left: 0px;
+}
+.main-page3 p{
+  font-size: 15px;
+  text-align: Center;
+  margin-top: 180px;
+  font-weight: 550;
+}
+.main-page4 p{
+  margin-top: 400px;
+  font-size: 15px;
+}
+.main-page5{
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+.main-page5-img1, .main-page5-img2, .main-page5-img3, .main-page5-img4, .main-page5-img5{
+  width: 500px;
+  height: 100px;
+  object-fit: cover; 
+}
+.main-page6{
+  position: relative;
+  top: 500px;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+}
+.main-page6 h2{
+ font-size: 20px;
+ top: 50px;
+ left: 30px;
+}
+.main-page6 div{
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  box-sizing: border-box;
+  left: 30px;
+  margin: calc(10%/4);
+  width: 450px;
+  height: 150px;
+}
+.main-page6 p{
+  margin: 25px;
+}
+#p1{
+  font-size: 15px;
+}
+#p2{
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.main-page6 a{
+  text-decoration: none;
+  color: black;
+}
+#different{
+  margin-top: 150px;
+  margin-left: 220px;
+}
+.footer-page1{
+  margin-top: 300px;
+}
+.footer-page1 div img{
+  width: 40px;
+  margin-left: 260px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.footer-page-div1 span{
+  position: relative;
+  left: 50px;
+  font-size: 12px;
+}
+.footer-page-div2{
+  margin-left: 100px;
+}
+.footer-page-div2 ul a{
+  margin: 0.5rem;
+  font-size: 12px;
+}
+.footer-page-div3{
+  display: flex;
+  list-style-type: none;
+  padding-left: 100px;
+}
+.footer-page-div3 li{
+  margin: 1rem;
+  font-size: 10px;
+}
+}
+@media (max-width:315px) {
+  body{
+    overflow-y: hidden;
+  }
+  #myVideo{
+    width: 150%;
+    height: 20%;
+  }
+  .header-container-div1 h1{
+    font-size: 15px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    line-height: 1.2;
+  }
+  .header-container-div1 p{
+    font-size: 9px;
+    padding-left: 30px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  .fa-bars{
+    display: inline;
+    position: relative;
+    left: -100px;
+  }
+.main-page2 h1{
+  position: relative;
+  top: 120px;
+  left: -10px;
+  font-size: 12px;
+}
+.main-page2-btn{
+  position: relative;
+  top: 150px;
+  left: -20px;
+  display: inline-block;
+  margin: 0;
+  padding: 0px;
+  width: 95px;
+  height: 150px;
+  font-size: 40px;
+}
+.main-page{
+  position: relative;
+  top: 280px;
+  left: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  justify-items: right;
+}
+.main-container1-btn img, .main-container2-btn img {
+  height: 150px;
+  width: 140px;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+.centered1,.centered2, .centered3, .centered4, .centered5, .centered6{
+  position: absolute;
+  top: 55px;
+  left: 30px;
+  font-size: 12px;
+}
+.main-page3{
+width: 100%;
+height: 80%;
+ background-image: url(https://www.uacnplc.com/wp-content/uploads/2020/01/Lagos-nIgeria-scaled.jpg);
+ background-attachment: fixed;
+ position: absolute;
+ top: 900px;
+ left: -20px;
+}
+.main-page3 p{
+  font-size: 10px;
+  text-align: Center;
+  margin-top: 50px;
+}
+.main-page4 p{
+  margin-top: 250px;
+  margin-left: 50px;
+  font-size: 15px;
+}
+.main-page5{
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+.main-page5-img1, .main-page5-img2, .main-page5-img3, .main-page5-img4, .main-page5-img5{
+  width: 500px;
+  height: 100px;
+  object-fit: cover; 
+}
+.main-page6{
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 140%;
+  height: 1000px;
+  background-color: white;
+}
+.main-page6 h2{
+ font-size: 20px;
+ top: 50px;
+ left: 20px;
+}
+.main-page6 div{
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  box-sizing: border-box;
+  left: 10px;
+  margin: calc(10%/2);
+  width: 400px;
+  height: 150px;
+}
+.main-page6 p{
+  margin: 25px;
+}
+#p1{
+  font-size: 15px;
+}
+#p2{
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.main-page6 a{
+  text-decoration: none;
+  color: black;
+}
+#different{
+  position: relative;
+  top: -350px;
+  left: -50px;
+}
+
+.footer-page1 div img{
+  width: 40px;
+  margin-left: 140px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.footer-page-div1 span{
+  position: relative;
+  left: 50px;
+  font-size: 12px;
+  align-items: center;
+}
+.footer-page-div2{
+  margin-left: 50px;
+}
+.footer-page-div2 ul a{
+  margin: 0.5rem;
+  font-size: 12px;
+}
+.footer-page-div3{
+  display: flex;
+  list-style-type: none;
+  padding-left: 50px;
+}
+.footer-page-div3 li{
+  margin: 1rem;
+  font-size: 10px;
+}
+}
+
